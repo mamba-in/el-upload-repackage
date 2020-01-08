@@ -7,6 +7,8 @@
 
 **Make sure you have installed el-upload**
 
+[Try the demo](https://mamba-in.github.io/el-upload-repackage/)
+
 ## How to use?
 ``` bash
 npm install el-upload-repackage
