@@ -2,7 +2,15 @@
 
 > It is an upload component base on ElementUI
 
-**Make sure you have installed <el-upload>**
+ [![vue2](https://img.shields.io/badge/vue-2.x-brightgreen.svg)](https://vuejs.org/)
+ [![Gemnasium](https://img.shields.io/gemnasium/mathiasbynens/he.svg)](https://github.com/mamba-in/el-upload-repackage)
+ [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/mamba-in/el-upload-repackage)
+ [![npm](https://img.shields.io/npm/v/el-upload-repackage.svg)](https://www.npmjs.com/package/el-upload-repackage)
+ [![npm](https://img.shields.io/npm/dm/el-upload-repackage.svg)](https://npmcharts.com/compare/el-upload-repackage)
+ [![minified](https://badgen.net/bundlephobia/min/el-upload-repackage)](https://bundlephobia.com/result?p=el-upload-repackage)
+ [![gzip](https://badgen.net/bundlephobia/minzip/el-upload-repackage)](https://bundlephobia.com/result?p=el-upload-repackage)
+
+**Make sure you have installed el-upload**
 
 ## How to use?
 ``` bash
