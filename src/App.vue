@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <upload :limit="3" :size="5" @handle-prepare="handlePrepareFiles" />
+    <upload :limit="3" :size="5" @handle-prepare="handlePrepareFiles" align="center" />
   </div>
 </template>
 
