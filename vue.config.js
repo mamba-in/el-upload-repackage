@@ -1,15 +1,5 @@
-const path = require('path')
-
 module.exports = {
-  publicPath: '/',
+  publicPath: 'https://mamba-in.github.io/el-upload-repackage/',
   outputDir: process.env.outputDir,
   lintOnSave: true
-  // output: {
-  //   path: path.resolve(__dirname, './dist'),
-  //   publicPath: '/dist/',
-  //   filename: 'el-upload-repackage.min.js',
-  //   library: 'Upload',
-  //   libraryTarget: 'umd',
-  //   umdNamedDefine: true
-  // }
 }
