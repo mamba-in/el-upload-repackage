@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <upload :limit="3" :size="5" />
+    <upload :limit="3" :size="5" @handle-prepare="handlePrepareFiles" />
   </div>
 </template>
 
@@ -11,6 +11,11 @@ export default {
   name: 'ElUploadRepackage',
   components: {
     Upload
+  },
+  methods: {
+    handlePrepareFiles(files) {
+      console.log(files)
+    }
   }
 }
 </script>

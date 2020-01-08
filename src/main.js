@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 import './plugins/element.js'
-import Upload from './components/el-upload-repackage'
+import Upload from './el-upload-repackage'
 
 export default Upload
 if (typeof window !== 'undefined' && window.Vue) {

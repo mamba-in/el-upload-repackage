@@ -1,7 +1,4 @@
 # el-upload-repackage
-
-> It is an upload component base on ElementUI
-
  [![vue2](https://img.shields.io/badge/vue-2.x-brightgreen.svg)](https://vuejs.org/)
  [![Gemnasium](https://img.shields.io/gemnasium/mathiasbynens/he.svg)](https://github.com/mamba-in/el-upload-repackage)
  [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/mamba-in/el-upload-repackage)
@@ -18,14 +15,24 @@ npm install el-upload-repackage
 ### Example
 ``` vue
 <template>
+  <div id="app">
     <upload :limit="3" :size="5" @handle-prepare="handlePrepareFiles" />
+  </div>
 </template>
 
 <script>
 import Upload from 'el-upload-repackage'
 
 export default {
-  components: { Upload }
+  name: 'ElUploadRepackage',
+  components: {
+    Upload
+  },
+  methods: {
+    handlePrepareFiles(files) {
+      console.log(files)
+    }
+  }
 }
 </script>
 ```
@@ -33,11 +40,11 @@ export default {
 ### Options
 |    Property    |    Description   |   type   |	default	|
 | -----------------  | ---------------- | :--------: | :----------: |
-| drag       | if you want to use drag |Boolean| true |
-| multiple   | if you want choose more than one |Boolean | false |
-| limit      | you can limit amount of the files | Number | 1 |
-| accept     | accepted file types | String | image/jpeg,image/png |
-| size     | you can limit size of the files | Number | 2 |
+| drag       | whether to activate drag and drop mode |Boolean| true |
+| multiple   | whether uploading multiple files is permitted |Boolean | false |
+| limit      | maximum number of uploads allowed | Number | 1 |
+| accept     | accepted file types | String | jpg/png |
+| size       | maximum size of uploads allowed | Number | 2 |
 | list-type     | type of fileList(text/picture/picture-card) | String | picture |
 
 

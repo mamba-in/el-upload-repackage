@@ -6,14 +6,15 @@
     "name": "Wong",
     "email": "1290898818@qq.com"
   },
-  "version": "0.1.4",
-  "main": "min.js",
+  "version": "0.2.0",
+  "main": "src/main.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "license": "MIT",
+  "homepage": "https://mamba-in.github.io/el-upload-repackage/",
   "dependencies": {
     "core-js": "^3.4.4",
     "element-ui": "^2.4.5",
