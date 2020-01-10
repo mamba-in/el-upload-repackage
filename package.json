@@ -6,7 +6,7 @@
     "name": "Wong",
     "email": "1290898818@qq.com"
   },
-  "version": "0.2.4",
+  "version": "0.2.5",
   "main": "src/main.js",
   "scripts": {
     "serve": "vue-cli-service serve",
