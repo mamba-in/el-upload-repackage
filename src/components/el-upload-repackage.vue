@@ -19,7 +19,10 @@
       <div v-if="drag === true" class="el-upload__text">将文件拖到此处，或<em>点击上传</em></div>
       <el-button v-else size="small" type="text">点击上传</el-button>
       <div slot="tip" class="el-upload__tip">
-        {{ `只能上传${ accept }文件，数量最多为${limit}个` }}
+        {{ `只能上传${ accept }文件，数量最多为${ limit }个` }}
+        <el-button v-if="provideTemplate" type="text">
+          <a style="color: inherit" :href="`${ publicPath }/${ templatePath }`" download="Template">点击下载模板</a>
+        </el-button>
       </div>
     </el-upload>
   </div>
@@ -51,6 +54,19 @@ export default {
     listType: {
       type: String,
       default: 'picture'
+    },
+    provideTemplate: {
+      type: Boolean,
+      default: false
+    },
+    templatePath: {
+      type: String,
+      default: 'template/template.xlsx'
+    }
+  },
+  data() {
+    return {
+      publicPath: process.env.BASE_URL
     }
   },
   methods: {
@@ -78,6 +94,10 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .upload-demo {
-	width: 300px;
+	width: 360px;
+}
+.el-upload__tip {
+	width: 400px;
+	text-align: left;
 }
 </style>

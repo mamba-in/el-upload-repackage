@@ -6,7 +6,7 @@
     "name": "Wong",
     "email": "1290898818@qq.com"
   },
-  "version": "0.2.1",
+  "version": "0.2.4",
   "main": "src/main.js",
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -15,6 +15,7 @@
   },
   "license": "MIT",
   "homepage": "https://mamba-in.github.io/el-upload-repackage/",
+  "keywords": ["upload", "el-upload", "file-upload", "image-upload"],
   "dependencies": {
     "core-js": "^3.4.4",
     "element-ui": "^2.4.5",

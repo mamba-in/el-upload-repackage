@@ -47,7 +47,9 @@ export default {
 | limit      | maximum number of uploads allowed | Number | 1 |
 | accept     | accepted file types | String | jpg/png |
 | size       | maximum size of uploads allowed | Number | 2 |
-| list-type     | type of fileList(text/picture/picture-card) | String | picture |
+| list-type  | type of fileList(text/picture/picture-card) | String | picture |
+| provide-template | whether to provide a document template | Boolean | false |
+| template-path | template download path (you better put your template file in the static resources folder | String | template/template.xlsx |
 
 
 ### Customize configuration
